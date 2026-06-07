@@ -3,7 +3,7 @@ Contributors: sujaypawar, wpcrafter
 Tags: woocommerce, funnel builder, sales funnels, custom checkout, WooCommerce checkout
 Requires at least: 5.8
 Tested up to: 6.8
-Stable tag: 2.1.16
+Stable tag: 2.1.17
 Requires PHP: 7.2
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -394,6 +394,15 @@ You can report the issue through our [Bug Bounty Program](https://brainstormforc
 4. Quickly re-arrange the steps.
 
 == Changelog ==
+
+= Version 2.1.17 - Monday, 17th November 2025 =
+* Improvement: Updated Google Fonts for improved consistency.
+* Improvement: Improved the Funnel Status toggle to make it more intuitive.
+* Improvement: Enhanced Funnel Test Mode by adding a dropdown for better usability.
+* Fix: Removed non-CartFlows revenue from the dashboard graph to ensure accurate reporting.
+* Fix: Removed cancelled-order revenue from the dashboard graph for correct revenue totals.
+* Fix: Fixed the Confirmation dialog failing to save Order Bump settings after confirmation.
+* Fix: Fixed custom CSS added within custom scripts settings not being applied issue.
 
 = Version 2.1.16 - Tuesday, 14th October 2025 =
 * Fix: Resolved the duplicate image issue while importing a ready-made template.

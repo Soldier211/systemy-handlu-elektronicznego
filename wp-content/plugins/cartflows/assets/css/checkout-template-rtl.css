@@ -2368,7 +2368,6 @@ body.cartflows_step-template .select2-container--default .select2-search--dropdo
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	font-weight: 500;
 }
 .wcf-embed-checkout-form.wcf-embed-checkout-form-modern-checkout .woocommerce form .wcf-email-validation-block {
 	font-size: 12px;
@@ -2844,7 +2843,7 @@ body .pac-placeholder {
 */
 
 .wcf-embed-checkout-form-instant-checkout .wcf-after-customer {
-	margin: 0 0 20px;
+	margin: 20px 0;
 }
 
 .wcf-embed-checkout-form.wcf-embed-checkout-form-instant-checkout {
@@ -3655,7 +3654,6 @@ button {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	font-weight: 500;
 }
 
 .wcf-embed-checkout-form.wcf-embed-checkout-form-instant-checkout .wcf-ic-layout-left-column #customer_information_heading {

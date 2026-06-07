@@ -126,7 +126,6 @@ if ( ! class_exists( 'Cartflows_Loader' ) ) {
 
 			add_action( 'plugins_loaded', array( $this, 'load_plugin' ), 99 );
 			add_action( 'init', array( $this, 'load_cf_textdomain' ) );
-
 		}
 
 		/**
@@ -140,7 +139,7 @@ if ( ! class_exists( 'Cartflows_Loader' ) ) {
 			define( 'CARTFLOWS_DIR', plugin_dir_path( CARTFLOWS_FILE ) );
 			define( 'CARTFLOWS_URL', plugins_url( '/', CARTFLOWS_FILE ) );
 
-			define( 'CARTFLOWS_VER', '2.1.16' );
+			define( 'CARTFLOWS_VER', '2.1.17' );
 			define( 'CARTFLOWS_SLUG', 'cartflows' );
 			define( 'CARTFLOWS_SETTINGS', 'cartflows_settings' );
 			define( 'CARTFLOWS_NAME', 'CartFlows' );
@@ -390,7 +389,6 @@ if ( ! class_exists( 'Cartflows_Loader' ) ) {
 			if ( ! class_exists( 'Cartflows_Nps_Survey' ) ) {
 				require_once CARTFLOWS_DIR . 'libraries/class-cartflows-nps-survey.php';
 			}
-
 		}
 
 		/**
@@ -668,7 +666,6 @@ if ( ! class_exists( 'Cartflows_Loader' ) ) {
 		 * Deactivation Reset
 		 */
 		public function deactivation_reset() {
-
 		}
 
 		/**
@@ -691,7 +688,7 @@ if ( ! class_exists( 'Cartflows_Loader' ) ) {
  *
  * @return object
  */
-function wcf() {
+function wcf() { // phpcs:ignore Universal.Files.SeparateFunctionsFromOO.Mixed
 	return Cartflows_Loader::get_instance();
 }
 

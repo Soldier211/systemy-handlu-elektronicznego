@@ -1,3 +1,12 @@
+Version 2.1.17 - Monday, 17th November 2025
+- Improvement: Updated Google Fonts for improved consistency.
+- Improvement: Improved the Funnel Status toggle to make it more intuitive.
+- Improvement: Enhanced Funnel Test Mode by adding a dropdown for better usability.
+- Fix: Removed non-CartFlows revenue from the dashboard graph to ensure accurate reporting.
+- Fix: Removed cancelled-order revenue from the dashboard graph for correct revenue totals.
+- Fix: Fixed the Confirmation dialog failing to save Order Bump settings after confirmation.
+- Fix: Fixed custom CSS added within custom scripts settings not being applied issue.
+
 Version 2.1.16 - Tuesday, 14th October 2025
 - Fix: Resolved the duplicate image issue while importing a ready-made template.
 - Fix: Improved the code performance by fixing the Rollback feature transient cache mismatch.

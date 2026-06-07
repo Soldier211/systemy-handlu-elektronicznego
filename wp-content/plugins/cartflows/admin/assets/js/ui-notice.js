@@ -50,8 +50,48 @@
 		} );
 	};
 
+	const dismiss_custom_offer_notice = function () {
+		$( '.wcf-custom-notice button.notice-dismiss' ).on(
+			'click',
+			function ( e ) {
+				e.preventDefault();
+
+				const data = {
+					action: 'cartflows_dismiss_custom_offer_notice',
+					security: cartflows_notices.dismiss_custom_offer_notice,
+				};
+
+				$.ajax( {
+					type: 'POST',
+					url: ajaxurl,
+					data,
+
+					success( response ) {
+						if ( response.success ) {
+							console.info( 'Custom Notice Dismissed.' );
+						} else if ( response.data && response.data.message ) {
+							console.error( response.data.message );
+						} else {
+							console.error(
+								'An unknown error occurred. Please try again.'
+							);
+						}
+					},
+					/* eslint-disable */
+					error( xhr, status, error ) {
+						console.error(
+							'A server or network error occurred. Please try again.'
+						);
+					},
+					/* eslint-enable */
+				} );
+			}
+		);
+	};
+
 	$( function () {
 		ignore_gb_notice();
 		dismiss_weekly_report_email_notice();
+		dismiss_custom_offer_notice();
 	} );
 } )( jQuery );

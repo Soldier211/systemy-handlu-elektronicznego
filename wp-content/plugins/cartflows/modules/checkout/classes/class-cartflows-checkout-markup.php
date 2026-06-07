@@ -209,7 +209,6 @@ class Cartflows_Checkout_Markup {
 		if ( _is_wcf_doing_checkout_ajax() ) {
 			add_filter( 'woocommerce_order_button_text', array( $this, 'place_order_button_text' ), 99, 1 );
 		}
-
 	}
 
 	/**
@@ -430,7 +429,6 @@ class Cartflows_Checkout_Markup {
 
 		return $button_text;
 		//phpcs:enable WordPress.Security.NonceVerification.Recommended
-
 	}
 
 	/**
@@ -665,7 +663,9 @@ class Cartflows_Checkout_Markup {
 
 							$cart_item_data = array(
 								'wcf_product_data' => array(
-									'unique_id' => $data['unique_id'],
+									'unique_id'       => $data['unique_id'],
+									'wcf_checkout_id' => $checkout_id,
+									'wcf_flow_id'     => $flow_id,
 								),
 							);
 
@@ -834,7 +834,6 @@ class Cartflows_Checkout_Markup {
 	public function add_customized_shipping_section() {
 
 		add_action( 'woocommerce_checkout_after_customer_details', array( $this, 'add_custom_shipping_section' ), 10 );
-
 	}
 
 	/**
@@ -974,7 +973,6 @@ class Cartflows_Checkout_Markup {
 		}
 
 		return $checkout_id;
-
 	}
 
 	/**
@@ -1755,7 +1753,6 @@ class Cartflows_Checkout_Markup {
 		);
 
 		return $toggle_texts[ $text ];
-
 	}
 
 	/**
@@ -1896,7 +1893,6 @@ class Cartflows_Checkout_Markup {
 			<?php
 		endif;
 	}
-
 }
 
 

@@ -1,3 +1,8 @@
+Version 2.0.4 - Thursday, 20th November 2025
+- Fix: Resolved the issue where the {store_address} shortcode did not render in Abandoned Cart emails when WooCommerce email styling was enabled.
+- Improvement: Removed unnecessary plugin notices from the dashboard.
+- Improvement: Added unsubscribed email indicators to the follow-up report and detailed report.
+
 Version 2.0.3 - Wednesday, 29th October 2025
 - Fix: Resolved an issue where completed orders were incorrectly marked as abandoned after the cutoff time, despite being excluded.
 - Fix: Corrected incorrect UTM parameters used in tracking links.
